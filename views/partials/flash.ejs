@@ -5,6 +5,13 @@
     </div>
 <% } %>
 
+<% if(error && error.length) {%>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <%= error %>
+        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close" onclick="closeAlert()"></button>
+    </div>
+<% } %>
+
 <script>
     function closeAlert() {
         var alert = document.querySelector('.alert');
