@@ -34,7 +34,7 @@ router.post(
     failureRedirect: "/login",
   }),
   (req, res) => {
-    req.flash("success", "welcome back!");
+    req.flash("success", "Welcome back!");
     res.redirect("/campgrounds");
   }
 );
